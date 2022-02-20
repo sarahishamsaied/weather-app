@@ -33,7 +33,7 @@ export default class Details extends Component {
     }
     woeid = this.props.match.params.id
     getData = async()=>{
-        let {data} = await axios.get(`https://www.metaweather.com/api/location/${this.woeid}/`)
+        let {data} = await axios.get(`https://the-ultimate-api-challenge.herokuapp.com/https://www.metaweather.com/api/location/${this.woeid}/`)
         console.log(data)
         this.setState({
             cityDetails:data,
