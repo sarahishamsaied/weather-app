@@ -1,25 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Home from './Components/Home/Home';
+import { Fragment } from 'react';
+import { Route,Switch } from 'react-router-dom';
+import Search from './Components/Search/Search'
+import Details from './Components/Details/Details';
+import Navbar from './Components/Navbar/Navbar';
+import LoadingScreen from './Components/LoadingScreen/LoadingScreen';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Fragment>
+        <Navbar/>
+    <Switch>
+      <Route exact path = "/" component={Home}/>
+      <Route path="/search" component={Search}/>
+      {/* <Route path="about" component={}/> */}
+      <Route path = '/details/:id' component={Details}/>
+    </Switch>
+  </Fragment>
 }
 
 export default App;

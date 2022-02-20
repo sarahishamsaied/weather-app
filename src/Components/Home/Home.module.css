@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Libre+Caslon+Text:wght@700&family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&family=Oswald&family=Raleway:wght@100&family=Roboto:wght@100&family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Libre+Caslon+Text:wght@700&family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&family=Oswald:wght@200;400&family=Raleway:wght@100&family=Roboto:wght@100&family=ZCOOL+QingKe+HuangYou&display=swap');
+.homePage{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    width: 100%;
+    height: 100vh;
+}
+.lightMode{
+    background-image: url("../../Images/sunrise-landscape-minimalism-5k-ex-1920x1080.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    height: 100vh;
+}
+.darkMode{
+    background-image: url("../../Images/mountain-night-landscape-with-forest-and-lake-vector.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    height: 100vh;
+}
+.weatherStatesList{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.weatherStatesList li{
+    background-color: rgba(16, 10, 41, 0.774);
+    padding: 30px;
+    border-radius: 7px;
+    position: relative;
+}
+.card{
+    background-color: rgba(16, 10, 41, 0.774);
+    border-radius: 5px;
+    padding-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 7px;
+    padding: 10px;
+    transition: .3s ease all;
+}
+.card:hover{
+    transform: scale(1.05,1.05);
+}
+.icon{
+    font-size: 25px;
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width:520px) {
+    .weatherStatesList{
+        justify-content: flex-start;
+    }
+    .weatherStatesList li{
+        background-color: rgba(16, 10, 41, 0.774);
+        padding: 7px;
+        border-radius: 7px;
+        position: relative;
+        
+    }
+    *{
+        font-size: smaller;
+    }
+}
+@media screen and (min-width:521px) and (max-width:760px) {
+    .weatherStatesList{
+        justify-content: flex-start;
+    }
+    .weatherStatesList li{
+        background-color: rgba(16, 10, 41, 0.774);
+        padding: 7px;
+        border-radius: 7px;
+        position: relative;
+        margin: 10px;
+    }
+    *{
+        font-size: smaller;
+    }
+}

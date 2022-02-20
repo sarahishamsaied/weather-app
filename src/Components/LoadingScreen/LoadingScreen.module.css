@@ -1,0 +1,16 @@
+.loadingScreen{
+    height: 100vh;
+    background-color: rgb(59, 59, 129);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animation .5s ease  infinite ;
+}
+@keyframes animation {
+    from{
+        background-color: rgb(59, 59, 129);
+    }
+    to{
+        background-color: rgb(115, 222, 255);
+    }
+}

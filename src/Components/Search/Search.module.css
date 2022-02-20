@@ -1,0 +1,16 @@
+.lightMode{
+    background-image: url("../../Images/sunrise-landscape-minimalism-5k-ex-1920x1080.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    height: 150vh;
+}
+.darkMode{
+    background-image: url("../../Images/mountain-night-landscape-with-forest-and-lake-vector.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    height: 150vh;
+}
