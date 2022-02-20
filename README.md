@@ -2,7 +2,7 @@
 # Weather App
 A simple forecast weather app that is developed using React Js and deployed using Heroku.
 
-1- This app uses [MetaWeatherApi](https://www.metaweather.com/api/) to fetch the climate of the users' ***current location*** 
+1- This app uses [MetaWeatherApi](https://www.metaweather.com/api/) to fetch the climate of the user's ***current location*** 
 
 2- searches cities and displays climate info.
 
@@ -25,5 +25,7 @@ Changes the background image according to the city's ***current time***.
 ***Searching & Displaying Climate Info***
 
 ![Weather App - Google Chrome 2022-02-20 22-39-03](https://user-images.githubusercontent.com/71923204/154864809-aa8c86f4-28a7-4186-9dd3-1668b4e26d18.gif)
+
+Dont forget to check it out! [WeatherApp](https://weather-app92.herokuapp.com/)
 
 # BYE BITCHES
