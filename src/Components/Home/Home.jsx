@@ -17,7 +17,7 @@ class Home extends Component {
     }
     getData = async(coords)=>{
         console.log(coords)
-        let {data} = await axios.get(`https://www.metaweather.com/api/location/search/?lattlong=${coords[0]},${coords[1]}`);
+        let {data} = await axios.get(`https://the-ultimate-api-challenge.herokuapp.com/https://www.metaweather.com/api/location/search/?lattlong=${coords[0]},${coords[1]}`);
         console.log("data issdajbk")
         this.setState({locationData:data[0]});
         this.getLocationData(this.state.locationData.woeid)
@@ -35,7 +35,7 @@ class Home extends Component {
         return [latitude,longitude];
     } 
     getLocationData = async(woeid)=>{
-        let {data} = await axios.get(`https://www.metaweather.com/api/location/${woeid}/`)
+        let {data} = await axios.get(`https://the-ultimate-api-challenge.herokuapp.com/https://www.metaweather.com/api/location/${woeid}/`)
         this.setState(
             {
                 moreData:data,

@@ -25,7 +25,7 @@ export default class Search extends Component {
     console.log(this.state.searchResults)
     for(let i = 0;i<this.state.searchResults.length;i++){
       this.state.moreData.title = this.state.searchResults[i].title
-      let {data} = await axios.get(`https://www.metaweather.com/api/location/${this.state.searchResults[i].woeid}`)
+      let {data} = await axios.get(`https://the-ultimate-api-challenge.herokuapp.com/https://www.metaweather.com/api/location/${this.state.searchResults[i].woeid}`)
       this.setState({
         moreData:[...this.state.moreData,data]
       })
@@ -43,7 +43,7 @@ export default class Search extends Component {
   getSearchResults = async()=>{
     if(this.state.searchQuery === '')
     return;
-    let {data} = await axios.get(`https://www.metaweather.com/api/location/search/?query=${this.state.searchQuery}`)
+    let {data} = await axios.get(`https://the-ultimate-api-challenge.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${this.state.searchQuery}`)
     if(!data || data.length === 0)
     {
       this.setState({
