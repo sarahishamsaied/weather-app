@@ -28,4 +28,3 @@ Changes the background image according to the city's ***current time***.
 
 Dont forget to check it out! [WeatherApp](https://weather-app92.herokuapp.com/)
 
-# BYE BITCHES
